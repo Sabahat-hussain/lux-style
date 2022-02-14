@@ -56,6 +56,6 @@ function lux_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function lux_customize_preview_js() {
-	wp_enqueue_script( 'lux-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+	wp_enqueue_script( 'lux-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), LUX_VERSION, true );
 }
 add_action( 'customize_preview_init', 'lux_customize_preview_js' );
