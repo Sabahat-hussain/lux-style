@@ -139,7 +139,6 @@ add_action( 'widgets_init', 'lux_widgets_init' );
  */
 function lux_scripts() {
 	wp_enqueue_style( 'lux-style', get_stylesheet_uri(), array(), LUX_VERSION );
-	wp_style_add_data( 'lux-style', 'rtl', 'replace' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
